@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using AdHoc.Core.Domain.Model.Base;
-using Equiz.Core.Domain.Model.DataBases;
-using Equiz.Core.Domain.Model.DataBases.Structure;
+using AdHocs.Core.Domain.Model.DataBases;
+using AdHocs.Core.Domain.Model.DataBases.Structure;
 
 namespace AdHoc.Core.Domain.Model.Employee
 {

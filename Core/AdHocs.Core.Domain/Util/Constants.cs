@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Equiz.Core.Domain.Util
+namespace AdHocs.Core.Domain.Util
 {
     internal static class Constants
     {

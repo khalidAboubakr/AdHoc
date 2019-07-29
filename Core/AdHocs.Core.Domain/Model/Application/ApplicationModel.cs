@@ -1,9 +1,9 @@
 ﻿using AdHoc.Core.Domain.Model.Base;
-using Equiz.Core.Domain.Model.DataBases;
+using AdHocs.Core.Domain.Model.DataBases;
 using System;
 using System.Collections.Generic;
 
-namespace Equiz.Core.Domain.Model.Application
+namespace AdHocs.Core.Domain.Model.Application
 {
     [Serializable]
     public class ApplicationModel : BaseEntity<int>

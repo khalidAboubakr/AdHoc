@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Equiz.Core.Domain.Model.DataBases.Enums
+namespace AdHocs.Core.Domain.Model.DataBases.Enums
 {
     public enum DataTypeModel
     {

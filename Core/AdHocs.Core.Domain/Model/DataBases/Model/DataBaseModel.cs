@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Equiz.Core.Domain.Model.DataBases
+namespace AdHocs.Core.Domain.Model.DataBases
 {
     [Serializable]
     public class DataBaseModel : BaseEntity<int>

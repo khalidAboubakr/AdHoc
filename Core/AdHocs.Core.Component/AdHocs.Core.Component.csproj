@@ -7,4 +7,9 @@
     <StartupObject />
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\CrossCutting\AdHocs.CrossCutting.Common\AdHocs.CrossCutting.Common.csproj" />
+    <ProjectReference Include="..\AdHocs.Core.Domain\AdHocs.Core.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

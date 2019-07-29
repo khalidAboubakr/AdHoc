@@ -1,5 +1,5 @@
 ﻿using CrossCutting.Contract;
-using EQuiz.Core.Component.Contract.Mongo;
+using AdHocs.Core.Component.Contract.Mongo;
 using Infrastructure.Mongo.Context;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;

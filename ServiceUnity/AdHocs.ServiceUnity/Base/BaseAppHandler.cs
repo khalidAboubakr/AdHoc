@@ -1,10 +1,10 @@
 ﻿using E.Quiz.Shared.Mapper.Contract;
-using Equiz.Core.Domain.Model.Base;
-using Equiz.Core.Domain.Model.Contract;
-using EQuiz.CoreComponent.Contract;
+using AdHocs.Core.Domain.Model.Base;
+using AdHocs.Core.Domain.Model.Contract;
+using AdHocs.CoreComponent.Contract;
 using System;
 
-namespace EQuiz.Core.QuizUnity.Base
+namespace AdHocs.Core.QuizUnity.Base
 {
     public abstract class BaseAppHandler<TDto, TEntity> : IAppHandler<TDto> where TDto : BaseDto, IEntityDto<int> where TEntity : BaseEntity, IEntity<int>
     {

@@ -1,12 +1,12 @@
-﻿using Equiz.Core.Domain.Model.DataBases.Enums;
-using Equiz.Core.Domain.Util;
+﻿using AdHocs.Core.Domain.Model.DataBases.Enums;
+using AdHocs.Core.Domain.Util;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Equiz.Core.Domain.Model.DataBases.Structure
+namespace AdHocs.Core.Domain.Model.DataBases.Structure
 {
     [Serializable]
     public class ColumnModel
