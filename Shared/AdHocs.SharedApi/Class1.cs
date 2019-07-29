@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AdHocs.ServiceUnity
+namespace AdHocs.SharedApi
 {
     public class Class1
     {

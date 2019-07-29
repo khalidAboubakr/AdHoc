@@ -15,11 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceUnity", "ServiceUnit
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{09562A42-2344-4FFC-99E6-B6903A005037}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdHocs.Core.Component", "Core\AdHocs.Core.Component\AdHocs.Core.Component.csproj", "{82656782-6B1A-46C4-9DF3-E84076D51BBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdHocs.Core.Component", "Core\AdHocs.Core.Component\AdHocs.Core.Component.csproj", "{82656782-6B1A-46C4-9DF3-E84076D51BBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdHocs.Core.Domain", "Core\AdHocs.Core.Domain\AdHocs.Core.Domain.csproj", "{F992345B-593D-44CB-8186-214C67E64630}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdHocs.Core.Domain", "Core\AdHocs.Core.Domain\AdHocs.Core.Domain.csproj", "{F992345B-593D-44CB-8186-214C67E64630}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdHocs.CrossCutting.Common", "CrossCutting\AdHocs.CrossCutting.Common\AdHocs.CrossCutting.Common.csproj", "{283BC912-062F-4A00-AC21-F5B7DD62A7FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdHocs.CrossCutting.Common", "CrossCutting\AdHocs.CrossCutting.Common\AdHocs.CrossCutting.Common.csproj", "{283BC912-062F-4A00-AC21-F5B7DD62A7FE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdHocs.Infrastructure.Data", "AdHocs.Infrastructure.Data", "{71580F4E-27D7-4F37-9207-C95534CFAB39}"
 EndProject
@@ -27,19 +27,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mongo", "Mongo", "{4C580E81
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL", "SQL", "{720D7A1E-296C-4F60-9448-2CF57EE023F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Mongo.Context", "Infrastructure\AdHocs.Infrastructure.Data\Mongo\Infrastructure.Mongo.Context\Infrastructure.Mongo.Context.csproj", "{D46C859A-607A-46A5-952C-970FABE57C12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Mongo.Context", "Infrastructure\AdHocs.Infrastructure.Data\Mongo\Infrastructure.Mongo.Context\Infrastructure.Mongo.Context.csproj", "{D46C859A-607A-46A5-952C-970FABE57C12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Mongo.DataAccess", "Infrastructure\AdHocs.Infrastructure.Data\Mongo\Infrastructure.Mongo.DataAccess\Infrastructure.Mongo.DataAccess.csproj", "{DE89682F-5AAD-46DC-B948-3DF2494125B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Mongo.DataAccess", "Infrastructure\AdHocs.Infrastructure.Data\Mongo\Infrastructure.Mongo.DataAccess\Infrastructure.Mongo.DataAccess.csproj", "{DE89682F-5AAD-46DC-B948-3DF2494125B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.DataAccess", "Infrastructure\AdHocs.Infrastructure.Data\SQL\Infrastructure.DataAccess\Infrastructure.DataAccess.csproj", "{F53F0978-888D-44E8-9586-BA099DD56024}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.DataAccess", "Infrastructure\AdHocs.Infrastructure.Data\SQL\Infrastructure.DataAccess\Infrastructure.DataAccess.csproj", "{F53F0978-888D-44E8-9586-BA099DD56024}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.EntityFramework", "Infrastructure\AdHocs.Infrastructure.Data\SQL\Infrastructure.EntityFramework\Infrastructure.EntityFramework.csproj", "{4706FBF6-3339-47C2-91B7-3C22B81FFB2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.EntityFramework", "Infrastructure\AdHocs.Infrastructure.Data\SQL\Infrastructure.EntityFramework\Infrastructure.EntityFramework.csproj", "{4706FBF6-3339-47C2-91B7-3C22B81FFB2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdHocs.ServiceUnity", "ServiceUnity\AdHocs.ServiceUnity\AdHocs.ServiceUnity.csproj", "{908A5798-1711-4B97-B79F-784F18562420}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdHocs.ServiceUnity", "ServiceUnity\AdHocs.ServiceUnity\AdHocs.ServiceUnity.csproj", "{908A5798-1711-4B97-B79F-784F18562420}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{5DE356C9-0260-48DD-B767-49309D7B24D5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{8B3B4ABD-CB8B-4582-A9AB-5E3B976B5AF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdHocs.Shared", "Shared\AdHocs.Shared\AdHocs.Shared.csproj", "{FA02BD45-BD9C-4B75-9962-9881E57E48B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdHocs.SharedApi", "Shared\AdHocs.SharedApi\AdHocs.SharedApi.csproj", "{D98B4002-56ED-4EFB-ABF7-1086A8665E70}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AdHocs.WebAPI", "Presentation\Api\AdHocs.WebAPI\AdHocs.WebAPI.fsproj", "{26F8FB59-A2EF-4E0C-A7AF-7FBBCEC8ECD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +85,18 @@ Global
 		{908A5798-1711-4B97-B79F-784F18562420}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{908A5798-1711-4B97-B79F-784F18562420}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{908A5798-1711-4B97-B79F-784F18562420}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA02BD45-BD9C-4B75-9962-9881E57E48B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA02BD45-BD9C-4B75-9962-9881E57E48B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA02BD45-BD9C-4B75-9962-9881E57E48B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA02BD45-BD9C-4B75-9962-9881E57E48B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D98B4002-56ED-4EFB-ABF7-1086A8665E70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D98B4002-56ED-4EFB-ABF7-1086A8665E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D98B4002-56ED-4EFB-ABF7-1086A8665E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D98B4002-56ED-4EFB-ABF7-1086A8665E70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26F8FB59-A2EF-4E0C-A7AF-7FBBCEC8ECD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26F8FB59-A2EF-4E0C-A7AF-7FBBCEC8ECD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26F8FB59-A2EF-4E0C-A7AF-7FBBCEC8ECD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26F8FB59-A2EF-4E0C-A7AF-7FBBCEC8ECD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,6 +114,9 @@ Global
 		{4706FBF6-3339-47C2-91B7-3C22B81FFB2D} = {720D7A1E-296C-4F60-9448-2CF57EE023F1}
 		{908A5798-1711-4B97-B79F-784F18562420} = {F090328D-0D5E-42DC-97B2-3469B0A37D3D}
 		{8B3B4ABD-CB8B-4582-A9AB-5E3B976B5AF9} = {0702D7FB-DDB0-4D99-A750-65681E9B7B3E}
+		{FA02BD45-BD9C-4B75-9962-9881E57E48B9} = {09562A42-2344-4FFC-99E6-B6903A005037}
+		{D98B4002-56ED-4EFB-ABF7-1086A8665E70} = {09562A42-2344-4FFC-99E6-B6903A005037}
+		{26F8FB59-A2EF-4E0C-A7AF-7FBBCEC8ECD4} = {8B3B4ABD-CB8B-4582-A9AB-5E3B976B5AF9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AE590319-A8D5-4AF7-B182-5D4EBB5B0784}
