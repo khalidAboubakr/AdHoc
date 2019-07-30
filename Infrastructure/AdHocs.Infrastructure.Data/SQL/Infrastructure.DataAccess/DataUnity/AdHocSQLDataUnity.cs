@@ -1,8 +1,7 @@
 ﻿using System;
-using Infrastructure.EntityFramework.Framework.Data.Context;
-using AdHoc.Core.Component.Contract;
 using Infrastructure.DataAccess.Repository.Handlers;
 using Infrastructure.DataAccess.Repository.Contract;
+using Infrastructure.EntityFramework.Framework.Data.Context;
 
 namespace Infrastructure.DataAccess.DataUnity
 {

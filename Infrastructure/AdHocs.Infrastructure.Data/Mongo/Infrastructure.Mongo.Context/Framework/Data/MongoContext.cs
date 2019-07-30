@@ -1,6 +1,13 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Infrastructure.Mongo.Context.Framework.Contract;
+using Microsoft.Extensions.Configuration;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Conventions;
 using MongoDB.Driver;
+
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Infrastructure.Mongo.Context
 {
@@ -19,31 +26,29 @@ namespace Infrastructure.Mongo.Context
             RegisterConventions();
 
             // Configure mongo (You can inject the config, just to simplify)
-            var mongoClient = new MongoClient(configuration.GetSection("MongoSettings").GetSection("Connection").Value);
+            var mongoClient = new MongoClient(Environment.GetEnvironmentVariable("MONGOCONNECTION") ?? configuration.GetSection("MongoSettings").GetSection("Connection").Value);
 
-            Database = mongoClient.GetDatabase(configuration.GetSection("MongoSettings").GetSection("DatabaseName").Value);
+            Database = mongoClient.GetDatabase(Environment.GetEnvironmentVariable("DATABASENAME") ?? configuration.GetSection("MongoSettings").GetSection("DatabaseName").Value);
+
         }
 
         private void RegisterConventions()
         {
             var pack = new ConventionPack
-        {
-            new IgnoreExtraElementsConvention(true),
-            new IgnoreIfDefaultConvention(true)
-        };
+            {
+                new IgnoreExtraElementsConvention(true),
+                new IgnoreIfDefaultConvention(true)
+            };
             ConventionRegistry.Register("My Solution Conventions", pack, t => true);
         }
 
-        public int SaveChanges()
+        public async Task<int> SaveChanges()
         {
-            var qtd = _commands.Count;
-            foreach (var command in _commands)
-            {
-                command();
-            }
+            var commandTasks = _commands.Select(c => c());
 
-            _commands.Clear();
-            return qtd;
+            await Task.WhenAll(commandTasks);
+
+            return _commands.Count;
         }
 
         public IMongoCollection<T> GetCollection<T>(string name)
@@ -56,10 +61,9 @@ namespace Infrastructure.Mongo.Context
             GC.SuppressFinalize(this);
         }
 
-        public Task AddCommand(Func<Task> func)
+        public void AddCommand(Func<Task> func)
         {
             _commands.Add(func);
-            return Task.CompletedTask;
         }
     }
 }

@@ -47,6 +47,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdHocs.SharedApi", "Shared\
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AdHocs.WebAPI", "Presentation\Api\AdHocs.WebAPI\AdHocs.WebAPI.fsproj", "{26F8FB59-A2EF-4E0C-A7AF-7FBBCEC8ECD4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{BA2F5159-6206-40A5-BDEF-98B2AD45C9B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdHocs.Persistence", "Persistence\AdHocs.Persistence\AdHocs.Persistence.csproj", "{67C0AD08-374C-49DB-89F4-878A3E3B42ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +101,10 @@ Global
 		{26F8FB59-A2EF-4E0C-A7AF-7FBBCEC8ECD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26F8FB59-A2EF-4E0C-A7AF-7FBBCEC8ECD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26F8FB59-A2EF-4E0C-A7AF-7FBBCEC8ECD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67C0AD08-374C-49DB-89F4-878A3E3B42ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67C0AD08-374C-49DB-89F4-878A3E3B42ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67C0AD08-374C-49DB-89F4-878A3E3B42ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67C0AD08-374C-49DB-89F4-878A3E3B42ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -117,6 +125,7 @@ Global
 		{FA02BD45-BD9C-4B75-9962-9881E57E48B9} = {09562A42-2344-4FFC-99E6-B6903A005037}
 		{D98B4002-56ED-4EFB-ABF7-1086A8665E70} = {09562A42-2344-4FFC-99E6-B6903A005037}
 		{26F8FB59-A2EF-4E0C-A7AF-7FBBCEC8ECD4} = {8B3B4ABD-CB8B-4582-A9AB-5E3B976B5AF9}
+		{67C0AD08-374C-49DB-89F4-878A3E3B42ED} = {BA2F5159-6206-40A5-BDEF-98B2AD45C9B9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AE590319-A8D5-4AF7-B182-5D4EBB5B0784}

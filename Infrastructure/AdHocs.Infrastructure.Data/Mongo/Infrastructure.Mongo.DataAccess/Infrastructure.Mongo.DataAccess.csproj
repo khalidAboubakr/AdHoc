@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,7 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DataUnity\" />
+    <PackageReference Include="MongoDB.Driver" Version="2.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Core\AdHocs.Core.Component\AdHocs.Core.Component.csproj" />
+    <ProjectReference Include="..\Infrastructure.Mongo.Context\Infrastructure.Mongo.Context.csproj" />
   </ItemGroup>
 
 </Project>

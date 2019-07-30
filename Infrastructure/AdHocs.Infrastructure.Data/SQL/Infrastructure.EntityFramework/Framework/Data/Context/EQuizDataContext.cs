@@ -1,12 +1,6 @@
 ﻿using System;
 using System.Data.Entity;
 using System.Data.Entity.SqlServer;
-using System.Configuration;
-using AdHoc.Core.Domain.Model.Employee;
-using AdHoc.Core.Domain.Model.Lookups;
-using AdHoc.Core.Domain.Model.Questions;
-using AdHoc.Core.Domain.Model.Quiz;
-using AdHoc.Core.Domain.Model.Topics;
 
 namespace Infrastructure.EntityFramework.Framework.Data.Context
 {

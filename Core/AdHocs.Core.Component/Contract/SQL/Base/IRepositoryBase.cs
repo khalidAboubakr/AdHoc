@@ -2,7 +2,7 @@
 
 namespace AdHoc.Core.Component.Contract
 {
-    public interface IRepositoryBase<TEntity>:IDisposable
+    public interface IRepositoryBase<TEntity> : IDisposable
     {
     }
 }
